@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>Calculator</header>
+    <div class="container">
+        <div class="keys">
+            <input id="display" name="display" type="text" readonly >
+            <button class="key blue AC">AC</button>
+
+            <button class="key blue DE" ><i class="fa-solid fa-delete-left"></i></button>
+
+            <button class="key blue per" ><i class="fa-solid fa-percent"></i></button>
+
+            <button class="key blue" onclick="display.value += '+'"><i class="fa-solid fa-plus"></i></button>
+
+            <button class="key" onclick="display.value += '7'">7</button>
+            <button class="key" onclick="display.value += '8'">8</button>
+            <button class="key" onclick="display.value += '9'">9</button>
+
+            <button class="key blue" onclick="display.value += '-'"><i class="fa-solid fa-minus"></i></button>
+
+            <button class="key" onclick="display.value += '4'">4</button>
+            <button class="key" onclick="display.value += '5'">5</button>
+            <button class="key" onclick="display.value += '6'">6</button>
+
+            <button class="key blue" onclick="display.value += '*'"><i class="fa-solid fa-star-of-life"></i></button>
+            <button class="key" onclick="display.value += '1'">1</button>
+
+            <button class="key" onclick="display.value += '2'">2</button>
+            <button class="key" onclick="display.value += '3'">3</button>
+            <button class="key blue" onclick="display.value += '/'"><b>/</b></button>
+            <button class="key" onclick="display.value += '00'">00</button>
+            <button class="key" onclick="display.value += '0'">0</button>
+            <button class="key" onclick="display.value += '.'">.</button>
+
+            <button class="key orange eval"><i class="fa-solid fa-equals"></i></button>
+            
+        
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
